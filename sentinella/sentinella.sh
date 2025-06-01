@@ -66,8 +66,18 @@ scale=1.2
 set terminal pngcairo enhanced size 1600,1200 background rgb "white" fontscale scale linewidth scale*1.1  pointscale scale*2 font ",16"
 set output 'sentinella_by_pathogen.png'
 
-set xrange ['2023-180':'2025-220']
+set xrange ['2022-100':'2025-220']
 set format x "%b-%Y"
+
+#Heatwaves
+set arrow from '2022-190', graph 0 to '2022-190', graph 1 nohead
+set arrow from '2022-213', graph 0 to '2022-213', graph 1 nohead
+set arrow from '2023-190', graph 0 to '2023-190', graph 1 nohead
+set arrow from '2023-205', graph 0 to '2023-205', graph 1 nohead
+set arrow from '2023-230', graph 0 to '2023-230', graph 1 nohead
+set arrow from '2023-244', graph 0 to '2023-244', graph 1 nohead
+set arrow from '2024-195', graph 0 to '2024-195', graph 1 nohead
+set arrow from '2024-227', graph 0 to '2024-227', graph 1 nohead
 
 plot $plot
 
